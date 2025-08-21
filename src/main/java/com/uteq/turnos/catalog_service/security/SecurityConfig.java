@@ -48,7 +48,7 @@ public class SecurityConfig {
   @Bean
   public CorsConfigurationSource corsConfig() {
     CorsConfiguration c = new CorsConfiguration();
-    c.setAllowedOrigins(List.of("http://localhost:5173","http://localhost:3000"));
+    c.setAllowedOrigins(List.of("http://localhost:5173","http://localhost:3000","https://turnos-frontend-l425d0pso-sss-projects-1be29493.vercel.app"));
     c.setAllowedMethods(List.of("GET","POST","PUT","DELETE","OPTIONS"));
     c.setAllowedHeaders(List.of("Authorization","Content-Type"));
     c.setAllowCredentials(true);
