@@ -28,7 +28,7 @@ public class DocenteController {
   private final RestTemplate http;
   private final DocenteService svc;
 
-  @Value("${app.auth.base-url:http://localhost:8081}")
+  @Value("${app.auth.base-url:https://auth-service-7lof.onrender.com}")
   private String authBase;
 
   public DocenteController(DocenteRepo docenteRepo,
