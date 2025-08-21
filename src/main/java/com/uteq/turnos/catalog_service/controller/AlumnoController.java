@@ -24,7 +24,7 @@ public class AlumnoController {
   private final AsignacionesService asig;
   private final RestTemplate http;
 
-  @Value("${app.auth.base-url:http://localhost:8081}")
+  @Value("${app.auth.base-url:https://auth-service-7lof.onrender.com}")
   private String authBase;
 
   public AlumnoController(AlumnoRepo alumnos, AsignacionesService asig, RestTemplate http) {
