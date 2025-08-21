@@ -14,7 +14,7 @@ import java.util.Base64;
 @Component
 public class JwtKeyProvider {
 
-  @Value("${security.jwt.public-key-url:http://localhost:8081/auth/keys/public}")
+  @Value("${security.jwt.public-key-url:https://auth-service-7lof.onrender.com/auth/keys/public}")
   private String publicKeyUrl;
 
   private final RestTemplate http = new RestTemplate();
