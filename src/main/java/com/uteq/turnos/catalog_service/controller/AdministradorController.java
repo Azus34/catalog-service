@@ -23,7 +23,7 @@ public class AdministradorController {
   private final AdministradorRepo adminRepo;
   private final RestTemplate http;
 
-  @Value("${app.auth.base-url:http://localhost:8081}")
+  @Value("${app.auth.base-url:https://auth-service-7lof.onrender.com}")
   private String authBase;
 
   public AdministradorController(AdministradorRepo adminRepo, RestTemplate http) {
